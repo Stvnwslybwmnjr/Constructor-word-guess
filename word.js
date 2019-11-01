@@ -1,15 +1,15 @@
 let Letter= require("./letter")
-console.log(Letter)
+// console.log(Letter)
 
 function Word(string){
     this.word=[]
     string.split("").forEach(char=> this.word.push(new Letter(char)))
     this.print=function(){
-        let display=""
+        let display="";
         this.word.forEach(letter=>{
             display+=letter.display()
         })
-        console.log("=========word line 12=======")
+        // console.log("=========word line 12=======")
         console.log(display)
     }
     this.guess=function(guessedLetter){
